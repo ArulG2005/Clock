@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:ital,wght@0,200;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Source+Sans+3:ital,wght@0,200;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dblack:#000000;
+    --liblack:#151515;
+    --vlior:#f8a145;
+    --lior:#f07900;
+    --darkor:#d35100;
+}
+body{
+    background-color: var(--darkor);
+    overflow-x: hidden;
+   
+}
+header{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2em;
+    box-shadow: white 0px 10px 60px;
+    text-shadow: #ffffff 0px 0px 20px;
+    
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    margin-top:40px;
+    max-width:900px;
+    justify-content: center;
+    padding: 0;
+
+}
+ul a{
+    margin: 30px;
+    font-size: 1.2em;
+    background-color:var(--vlior);
+    padding: 5px;
+    border-radius: 30px;
+    box-shadow:#151515 10px 10px 10px;
+    font-weight: 800;
+}
+.time{
+    background-color: #000000;
+    color: var(--vlior);
+}
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: var(--lior);
+   min-width:600px;
+   height: 200px;
+   position: absolute;
+   top: 55%;
+   box-shadow:#151515 10px 20px 60px;
+   font-family: 'Orbitron', sans-serif;
+   
+}
+.full{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#nord{
+   position: absolute;
+   left:100px;
+   top:30px;
+}
+.Time{
+    position: absolute;
+    top: 30%;
+    visibility:visible;
+    font-weight: bolder;
+    width: 20%;
+    display: flex;
+}
+#amorpm{
+    position:absolute;
+}
+.Alarm{
+    position: absolute;
+    visibility: hidden;
+    top: 30%;
+    
+}
+.Stopwatch{
+    position: absolute;
+    visibility: hidden;
+    top: 30%;
+}
+.Timer{
+    position: absolute;
+    visibility: hidden;
+    top: 30%;
+}
+#set,#start,#tstart{
+    background-color: rgb(29, 202, 29);
+    border-radius: 10px;
+    box-shadow: #000000 2px 5px 10px;
+}
+#cancel,#stop{
+    background-color: red;
+    border-radius: 10px;
+    box-shadow: #000000 2px 5px 10px;
+}
+#restart{
+    background-color: yellow;
+    border-radius: 10px;
+    box-shadow: #000000 2px 5px 10px;
+}
+@media all and (max-width:800px){
+   
+    ul a{
+        margin: 40px;
+        font-size: 1.1em;
+font-size: 1.5em;
+    }
+      .Time{
+        position: absolute;
+        top: 25%;
+        visibility:visible;
+        font-weight: bolder;
+        font-size: 1.7em;
+        width: 35%;
+        
+    }
+    #nord{
+        position: absolute;
+        left:180px;
+        top: 50px;
+     }
+    .Alarm{
+        position: absolute;
+        visibility: hidden;
+        top: 15%;
+        font-size:1.7em;
+        
+    }
+    .Stopwatch{
+        position: absolute;
+        visibility: hidden;
+        top:8%;
+        font-size: 1.7rem;
+        width:45%;
+    }
+    .Timer{
+        position: absolute;
+        visibility: hidden;
+        top: 15%;
+        font-size: 1.4em;
+    }
+
+
+}
+@media all and (min-width:800px){
+   
+        ul a{
+            margin: 40px;
+            font-size: 1.1em;
+   font-size: 1.5em;
+        }
+          .Time{
+            position: absolute;
+            top: 25%;
+            visibility:visible;
+            font-weight: bolder;
+            font-size: 1.7em;
+            width: 35%;
+            
+        }
+        #nord{
+            position: absolute;
+            left:180px;
+            top: 50px;
+         }
+        .Alarm{
+            position: absolute;
+            visibility: hidden;
+            top: 15%;
+            font-size:1.7em;
+            
+        }
+        .Stopwatch{
+            position: absolute;
+            visibility: hidden;
+            top:8%;
+            font-size: 1.7rem;
+            width:45%;
+        }
+        .Timer{
+            position: absolute;
+            visibility: hidden;
+            top: 15%;
+            font-size: 1.4em;
+        }
+    
+    
+    }
+    @media all and (min-width:1200px){
+   
+        ul a{
+            margin: 50px;
+            font-size: 1.5em;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 2em;
+        }
+        .Time{
+            position: absolute;
+            top: 15%;
+            visibility:visible;
+            font-weight: bolder;
+            font-size: 2em;
+            width: 35%;
+            
+        }
+        #nord{
+            position: absolute;
+            left:200px;
+            top: 60px;
+         }
+        .Alarm{
+            position: absolute;
+            visibility: hidden;
+            top: 15%;
+            font-size:2em;
+            
+        }
+        .Stopwatch{
+            position: absolute;
+            visibility: hidden;
+            top:8%;
+            font-size: 2rem;
+            width:50%;
+        }
+        .Timer{
+            position: absolute;
+            visibility: hidden;
+            top: 15%;
+            font-size: 1.4em;
+        }
+    
+    }
+    @media all and (max-width:660px){
+   
+        ul a{
+            margin: 14px;
+            font-size: 0.7em;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        .display{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           background-color: var(--lior);
+           min-width:400px;
+           height: 200px;
+           position: absolute;
+           top: 55%;
+           box-shadow:#151515 10px 20px 60px;
+           font-family: 'Orbitron', sans-serif;
+           
+        }
+        .Time{
+            position: absolute;
+            top: 30%;
+            visibility:visible;
+            font-weight: bolder;
+            font-size: 1.2em;
+            width: 35%;
+            
+        }
+        #nord{
+            position: absolute;
+            left:125px;
+            top: 40px;
+         }
+        .Alarm{
+            position: absolute;
+            visibility: hidden;
+            top: 15%;
+            font-size:1.2em;
+            
+        }
+        .Stopwatch{
+            position: absolute;
+            visibility: hidden;
+            top:25%;
+            font-size: 1.2rem;
+            width:45%;
+        }
+        .Timer{
+            position: absolute;
+            visibility: hidden;
+            top: 15%;
+            font-size: 1.2em;
+        }
+        
+    }

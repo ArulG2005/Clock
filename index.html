@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clock</title>
+</head>
+<body>
+   <header>
+    <h1>Clock</h1>
+</header>
+
+    <div class="menu">
+        <ul>
+            <a class="time">Time</a>
+            <a class="alarm">Alarm</a>
+            <a class="swatch">Stopwatch</a>
+            <a class="timer">Timer</la>
+        </ul>
+    </div>
+  <div class="full">
+   <div class="display">
+    <div class="Time">
+        <p><span id="hour">00</span> : <span id="min">00</span> : <span id="sec">00</span> </p>
+        <div id="amorpm"><span id="nord">AM</span></div>
+    </div>
+    
+    <div class="Alarm">
+        <input type="datetime-local" name="alarm" id="alarm" required>
+        <div id="indicator"></div>
+        <button id="set">Set</button>
+        <div class="dis">
+            
+        </div>
+        <audio id="aud" src="Music/alarm.mp3"></audio>
+        
+    </div>
+    <div class="Stopwatch">
+        <p><span id="shour">00</span> : <span id="smin">00</span> : <span id="ssec">00</span> : <span id="smillsec">00</span></p>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="restart">Restart</button>
+    </div>
+    <div class="Timer">
+            <input type="datetime" id="timerinput" placeholder="Enter Second...!" value="" required>
+            <p><span id="thour">00</span> : <span id="tmin">00</span> : <span id="tsec">00</span> </p>
+            <button id="tstart">Start</button>
+            <button id="cancel">Cancel</button>
+    </div>
+   </div>
+   </div>
+   <script src="script.js">
+
+   </script>
+</body>
+</html>
